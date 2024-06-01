@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Happy Birthday, Christy!</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            text-align: center;
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            margin-top: 50px;
+        }
+        h1 {
+            color: #ff6f61;
+        }
+        p {
+            font-size: 18px;
+        }
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            background-color: #007bff;
+            color: #fff;
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #0056b3;
+        }
+        .balloons {
+            display: none;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Happy Birthday, Christy!</h1>
+        <p>Click the button below for a surprise!</p>
+        <button onclick="showMessage()">Click me!</button>
+        <p id="message"></p>
+        <div class="balloons">
+            <img src="https://media.giphy.com/media/26FPy3QZQqGtDcrja/giphy.gif" alt="Balloons">
+        </div>
+    </div>
+
+    <script>
+        function showMessage() {
+            document.getElementById('message').innerHTML = "Wishing you a fantastic day filled with joy and success! 🎉🎂";
+            document.querySelector('.balloons').style.display = 'block';
+        }
+    </script>
+</body>
+</html>
